@@ -5,9 +5,9 @@ dependencies:
   - python=3.12
   - jupyterlab
   - numpy
-  - ray
   - requests
   - pip
   - pip:
     - jupyter-keepalive
     - python-cmr
+    - ray
