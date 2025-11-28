@@ -2,12 +2,42 @@ name: antarctic_ars
 channels:
   - conda-forge
 dependencies:
+  # Core Python & Jupyter
   - python=3.12
   - jupyterlab
-  - numpy
-  - requests
+  - ipywidgets
   - pip
+
+  # Data Science Stack
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - statsmodels
+  - matplotlib
+  - seaborn
+
+  # Geospatial & Data Formats
+  - xarray
+  - cartopy
+  - netcdf4
+  - h5py
+  - zarr
+  - shapely
+  - pyproj
+
+  # Parallel Computing & Cloud
+  - dask
+  - distributed
+  - boto3
+  - requests
+
+  # Pip-only packages (and packages with Conda issues)
   - pip:
+    - ray
     - jupyter-keepalive
     - python-cmr
-    - ray
+    - earthaccess
+    - s3fs
+    - pqdm
+    - tqdm
